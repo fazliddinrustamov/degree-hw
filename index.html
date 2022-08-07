@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Degree js</title>
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body class="bg-primary bg-opacity-10">
+  <div class="container">
+    <div class="inner">
+      <h1 class="heading text-center link-dark opacity-50 fw-bolder mt-5">Write the <span class="link-primary">degree</span> and <span class="link-info">check</span> another measures!</h1>
+
+      <form class="degree-form mt-5 text-center">
+        <input class="degree-taker w-25 ps-3 pt-3 pb-3 border-0 rounded-4 shadow me-2" type="number" placeholder="enter the air temperature" required>
+
+        <select class="degree-selector w-25 ps-3 pt-3 pb-3 border-0 rounded-4 shadow me-2">
+          <option value="none" selected hidden>select the type that you need!</option>
+
+          <option value="celsius">Celsius</option>
+
+          <option value="kelvin">Kelvin</option>
+
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+
+        <button class="degree-sender bg-white ps-3 pe-3 pt-3 pb-3 border-0 rounded-4 shadow" type="submit">Send value!</button>
+      </form>
+
+      <ul class="result-list list-unstyled row mt-3 justify-content-center">
+        <li class="list-result-taker-left list-result-taker col-3 bg-white pt-4 text-center border-0 rounded-4 shadow me-3"></li>
+
+        <li class="list-result-taker-right list-result-taker col-3 bg-white pt-4 text-center border-0 rounded-4 shadow"></li>
+      </ul>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
