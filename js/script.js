@@ -19,10 +19,7 @@ degreeForm.addEventListener("submit", function(evt){
 
   let degreeSelectorValue = degreeSelector.value;
 
-  if (degreeSelectorValue = "none") {
-    resultTakerFirst.textContent = `Please select measure!`;
-    resultTakerSecond.textContent = `Please select measure!`;
-  } else if (degreeSelectorValue = "celsius") {
+  if (degreeSelectorValue = "celsius") {
     resultTakerFirst.textContent = `Celsius to Kelvin: ${(celsiusToKelvin * degreeTakerValue).toFixed(1)}`;
     resultTakerSecond.textContent = `Celsius to Fahrenheit: ${(celsiusToFahrenheit * degreeTakerValue).toFixed(1)}`;
   } else if (degreeSelectorValue = "kelvin") {
